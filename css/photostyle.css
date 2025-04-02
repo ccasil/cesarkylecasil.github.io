@@ -1,0 +1,89 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    background: #afafaf;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #fafafa;
+}
+#photos {
+    min-height: calc(100vh - 304px);
+}
+
+.photobackground {
+    background-color: #9fa9a3;
+    min-height: 232px;
+    padding: 16px;
+}
+
+hr {
+    box-sizing: content-box;
+    overflow: visible;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.display-4 {
+    font-size: calc(40px + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        font-size: 0.8rem;
+    }
+}
+
+.navbar {
+    width: 100px;
+}
+
+.btn-primary {
+    width: 140px !important;
+    background-color: #c5d5c5 !important;
+    color: #222;
+}
+.btn-primary:hover,.btn-primary.active  {
+    border-color: #222 !important;
+    background-color: #e3e0cc !important;
+    color: #222 !important;
+}
+
+.titlespace {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.backgrade {
+    background-image: linear-gradient(#9fa9a3, #f0f0f0);
+}
+
+.photodetails {
+    font-style: italic;
+    position: relative !important;
+    top: -30px !important;
+    left: 10px;
+}
+
+.datedetails {
+    color: white;
+    position: relative !important;
+    top: 30px !important;
+    left: -10px;
+}
+
+.image-trigger {
+    cursor: zoom-in;
+}

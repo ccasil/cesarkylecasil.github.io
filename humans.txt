@@ -9,5 +9,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5, JavaScript, jQuery,
-    Bootstrap, FontAwesome, Google Analytics
+    CSS, HTML, JavaScript, jQuery,
+    Bootstrap, Google Analytics, Google Search Console
