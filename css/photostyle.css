@@ -102,3 +102,7 @@ hr {
     height: 100%;
     object-fit: cover; /* Crop or scale the image to fill the container */
 }
+
+.modal-body, .modal-header {
+    background-color: #f0f0f0;
+}
