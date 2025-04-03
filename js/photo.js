@@ -175,6 +175,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show a loading indicator (optional)
             modalImage.src = ''; // Clear the previous src
             modalImage.alt = 'Loading...';
+            modalTitle.textContent = 'ƒ/ 1 ISO mm';
+            modalAlt.textContent = '';
 
             const newImage = new Image(); // Create a new image object
             newImage.onload = function() {
