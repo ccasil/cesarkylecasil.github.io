@@ -102,6 +102,9 @@ hr {
     height: 100%;
     object-fit: cover; /* Crop or scale the image to fill the container */
 }
+.modal-content {
+    touch-action: pan-y pinch-zoom; /* Allow image zoom but prevent modal zoom */
+}
 
 .modal-body, .modal-header {
     background-color: #f0f0f0;
