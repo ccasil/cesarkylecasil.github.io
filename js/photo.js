@@ -137,7 +137,10 @@ document.addEventListener('DOMContentLoaded', function() {
             height: 267
         }
     ];
-
+    if (imageData.length > 0) {
+        const firstImage = new Image();
+        firstImage.src = imageData[0].smallUrl; // preload 1st image
+    }
     const imageContainer = document.getElementById('imageContainer');
     const modalImage = document.getElementById('modalImage');
     const modalTitle = document.getElementById('photoModalLabel');
@@ -146,21 +149,21 @@ document.addEventListener('DOMContentLoaded', function() {
     imageData.forEach(image => {
         const imageDiv = document.createElement('div');
         imageDiv.classList.add('col-12', 'col-sm-6', 'col-md-4', 'image-trigger');
-        imageDiv.setAttribute('data-bs-toggle', 'modal');
-        imageDiv.setAttribute('data-bs-target', '#photoModal');
-        imageDiv.setAttribute('data-hd-url', image.hdUrl);
 
         const imageContainerDiv = document.createElement('div');
         imageContainerDiv.classList.add('image-container'); // Apply the CSS class
+        imageContainerDiv.setAttribute('data-bs-toggle', 'modal');
+        imageContainerDiv.setAttribute('data-bs-target', '#photoModal');
+        imageContainerDiv.setAttribute('data-hd-url', image.hdUrl);
 
         imageContainerDiv.innerHTML = `
             <img src="${image.smallUrl}" class="img-fluid w-100 border border-5 border-white mb-0" alt="${image.alt}">
         `;
 
         imageDiv.innerHTML = `
-            <p class="small mb-0 text-end datedetails font-monospace">${image.date}</p>
+            <span class="small text-end datedetails font-monospace">${image.date}</span>
             ${imageContainerDiv.outerHTML}
-            <p class="photodetails text-light mb-0">${image.photodetails}</p>
+            <span class="photodetails text-light">${image.photodetails}</span>
         `;
         imageContainer.appendChild(imageDiv);
     });
@@ -169,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageTriggers = document.querySelectorAll('.image-trigger');
     imageTriggers.forEach(trigger => {
         trigger.addEventListener('click', function() {
-            const hdUrl = this.getAttribute('data-hd-url');
+            const hdUrl = this.querySelector('.image-container').getAttribute('data-hd-url');
             const photoDetails = this.querySelector('.photodetails').textContent;
             const altText = this.querySelector('img').getAttribute('alt'); 
             // Show a loading indicator (optional)
