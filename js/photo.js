@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newImage.src = hdUrl; // Start loading the new image
         });
     });
-    document.addEventListener('gesturestart', function(e) {
-        e.preventDefault();
-    });
+    // document.addEventListener('gesturestart', function(e) {
+    //     e.preventDefault();
+    // });
 });
