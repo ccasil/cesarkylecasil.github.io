@@ -3,6 +3,13 @@ const element = document.getElementById("year");
 if (element) {
     element.innerHTML = thisyear;
 }
+document.addEventListener('gesturestart', function(e) {
+    e.preventDefault();
+});
+
+document.addEventListener('gesturechange', function(e) {
+    e.preventDefault();
+});
 document.addEventListener('DOMContentLoaded', function() {
     const imageData = [
         // {
