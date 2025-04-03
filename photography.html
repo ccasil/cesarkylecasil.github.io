@@ -63,7 +63,7 @@
         <div class="d-flex justify-content-center text-center">
             <div>
                 <h1 class="h1 display-3 font-weight-bold text-white titlespace"><span
-                        class="fw-bold">Photographs</span><span class="h2 display-4 opacity"> by <span
+                        class="fw-bold">photographs</span><span class="h2 display-4 opacity"> by <span
                             class="fst-italic">Cesar Kyle Casil</span></span></h1>
                 <h2 class="h5 display-6">
                     <a class="nav-link text-decoration-underline" href="https://www.flickr.com/photos/ccasil/" target="_blank">view
@@ -96,7 +96,7 @@
 
     <div class="backgrade">
         <div class="container" id="photos">
-            <h2 class="h5 text-center">Click photo to view in <span class="fw-bold">High-Resolution</span></h2>
+            <h2 class="h5 text-center">Click photos to view in <span class="fw-bold">High-Resolution</span></h2>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="landscape-tab-pane" role="tabpanel"
                     aria-labelledby="landscape-tab" tabindex="0">
@@ -109,13 +109,18 @@
             <!-- Modal -->
             <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-bottom-0">
-                            <h1 class="modal-title fs-5" id="photoModalLabel" id="photoModalLabel"></h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content" data-bs-dismiss="modal">
+                        <div class="modal-header border-bottom-0 text-light pb-2">
+                            <div class="w-100 text-center">
+                                <h1 class="modal-title fs-6" id="photoModalLabel"></h1>
+                            </div>
+                            <!-- <div data-bs-theme="dark">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div> -->
                         </div>
                         <div class="modal-body p-0 text-center modal-image-container">
-                            <img id="modalImage" src="" class="modal-image" alt="High-Resolution Image">
+                            <img id="modalImage" src="" class="modal-image border border-5 border-light" alt="High-Resolution Image">
+                            <h1 class="fs-5 text-light mb-0 pt-2" id="photoModalAlt"></h1>
                         </div>
                     </div>
                 </div>
