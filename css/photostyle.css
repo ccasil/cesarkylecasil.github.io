@@ -106,3 +106,17 @@ hr {
 .modal-body, .modal-header {
     background-color: #f0f0f0;
 }
+
+.modal-image-container {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-image {
+    display: block; /* Ensure the image doesn't stretch */
+    max-width: 100%; /* Limit to modal width */
+    max-height: 100vh; /* Limit to viewport height */
+}
