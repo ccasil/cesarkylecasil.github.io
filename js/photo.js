@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/54416029033_916a70a4e2_k.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/54416029033_6305a741ac_w.jpg',
-            alt: 'Don Callejon, Santa Clara',
+            alt: 'Don Callejon Arts and Design School SCUSD, Santa Clara',
             photodetails: 'ƒ/5.0 1/320 ISO100 18mm',
             date: '3/2025',
             width: 400,
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const newImage = new Image(); // Create a new image object
             newImage.onload = function() {
                 modalImage.src = hdUrl; // Set the new src when loaded
-                modalImage.alt = 'High-Resolution Image';
+                modalImage.alt = altText;
                 modalTitle.textContent = photoDetails;
                 modalAlt.textContent = altText;
             };

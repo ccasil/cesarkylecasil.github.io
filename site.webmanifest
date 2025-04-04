@@ -1,11 +1,13 @@
 {
-    "name": "Cesar Kyle Casil",
+    "name": "Cesar Kyle Casil | Web Development & Photography",
     "short_name": "Cesar Casil",
+    "description": "Cesar Kyle Casil's professional portfolio and photography showcase. Explore software engineering projects and photography from Silicon Valley.",
     "theme_color": "#fafafa",
     "background_color": "#fafafa",
     "display": "standalone",
-    "scope": "./",
-    "start_url": "./",
+    "scope": "/",
+    "start_url": "/",
+    "categories": ["portfolio", "photography", "software"],
     "icons": [{
         "src": "./favicon.ico",
         "type": "image/png",
