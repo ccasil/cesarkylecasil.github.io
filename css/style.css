@@ -14,13 +14,38 @@ body {
 }
 
 #pageindex {
-    background-color: #4e5e6d;
+    background-color: #D8D2C2;
+}
+.headercolorindex,
+.headercolorindex a {
+    background-color: #FAF7F0;
+    color: #B17457 !important;
 }
 
-#page404 {
-    background-color: #bbc2ce;
+.text-index {
+    color: #4A4947;
 }
 
+.card-header {
+    background-color: #4A4947;
+    color: #FAF7F0;
+}
+
+.card-body {
+    background-color: #FAF7F0;
+}
+
+#submit_button {
+    background-color: #B17457;
+    color: #D8D2C2;
+}
+
+.sectionbg {
+    background-color: #FAF7F0;
+}
+.table-striped {
+    --bs-table-striped-bg: #D8D2C2; /* Replace with your desired color */
+}
 .opacity {
     opacity: 0.6;
 }
@@ -37,15 +62,10 @@ body {
     position: relative;
 }
 
-/* 404 */
-.four04parallax {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../images/santa-cruz-min.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    min-height: calc(100vh - 166px);
-    position: relative;
+
+#meme {
+    padding: 4px;
+    border: 2px solid #B17457;
 }
 
 @media (max-width: 576px) {
@@ -53,10 +73,6 @@ body {
     .arrows,
     #fixedbutton {
         display: none;
-    }
-
-    .nav-item {
-        font-size: 0.8rem;
     }
 
     #meme {
@@ -81,11 +97,6 @@ body {
     .titleparallax {
         background-attachment: scroll;
     }
-
-    /* 404 */
-    .four04parallax {
-        background-attachment: scroll;
-    }
 }
 
 @media (min-width: 768px) {
@@ -97,11 +108,6 @@ body {
 
     /* title */
     .titleparallax {
-        background-attachment: fixed;
-    }
-
-    /* 404 */
-    .four04parallax {
         background-attachment: fixed;
     }
 
@@ -123,10 +129,6 @@ body {
     }
 }
 
-.navbar {
-    /* width: 173.5px; */
-}
-
 #fixedbutton {
     font-size: 0.8rem;
     position: fixed;
@@ -136,10 +138,9 @@ body {
     /* width: 100px; */
 }
 
-.hideme {
-    opacity: .2;
+#fixedbutton p  {
+    color: #B17457 !important;
 }
-
 
 .arrow-container {
     position: relative;
@@ -203,37 +204,22 @@ svg.arrows {
     width: 170px;
 }
 
-.backgrade {
-    /* background-image: linear-gradient(#fafafa, #afafaf); */
-    background-color: #FDF9F3;
-}
-
-.headercolorindex,
-.headercolorindex a {
-    background-color: #bbc2ce;
-    color: #4e5e6d !important;
-}
-
-.headercolor404,
-.headercolor404 a,
-#submit_button {
-    background-color: #4e5e6d;
-    color: #bbc2ce !important;
-}
-
 .table td {
     color: black;
 }
 
-a:link,
-a:visited,
+a,
 .projectlinks {
-    color: black;
+    color: #B17457;
+    text-decoration: none;
+}
+#fixedbutton p a:visited {
+    color: #B17457;
     text-decoration: none;
 }
 
 .biolinks {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #ffffffe6 !important;
     text-decoration: none !important;
 }
 

@@ -31,9 +31,6 @@ body {
 }
 
 @media (max-width: 576px) {
-    .nav-item {
-        font-size: 0.8rem;
-    }
 }
 
 .navbar {
