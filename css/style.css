@@ -3,14 +3,22 @@ html {
     font-size: 1em;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    background: #FDF9F3;
+    /* background: #FDF9F3; */
     /* padding-top: 80px; */
 }
 
 body {
     margin: 0;
     overflow-x: hidden;
-    background: #FDF9F3;
+    /* background: #FDF9F3; */
+}
+
+#pageindex {
+    background-color: #4e5e6d;
+}
+
+#page404 {
+    background-color: #bbc2ce;
 }
 
 .opacity {
@@ -27,8 +35,6 @@ body {
     /* min-height: 100vh; */
     min-height: calc(100vh - 128px);
     position: relative;
-    z-index: 9;
-    background-color: #FDF9F3;
 }
 
 /* 404 */
@@ -38,7 +44,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    min-height: calc(100vh - 157px);
+    min-height: calc(100vh - 166px);
     position: relative;
 }
 
@@ -202,14 +208,17 @@ svg.arrows {
     background-color: #FDF9F3;
 }
 
-.headercolorindex, .headercolorindex a, #submit_button {
-    background-color: #4e5e6d;
-    color: #f0f2f4 !important;
-}
-
-.headercolor404, .headercolor404 a {
+.headercolorindex,
+.headercolorindex a {
     background-color: #bbc2ce;
     color: #4e5e6d !important;
+}
+
+.headercolor404,
+.headercolor404 a,
+#submit_button {
+    background-color: #4e5e6d;
+    color: #bbc2ce !important;
 }
 
 .table td {
