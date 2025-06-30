@@ -10,17 +10,13 @@ body {
     overflow-x: hidden;
 }
 
-#pageindex {
+#pagebg {
     background-color: #D8D2C2;
 }
-.headercolorindex,
-.headercolorindex a {
+.headercolor,
+.headercolor a {
     background-color: #FAF7F0;
     color: #B17457 !important;
-}
-
-.text-index {
-    color: #4A4947;
 }
 
 .card-header {
@@ -39,6 +35,7 @@ body {
 
 .sectionbg {
     background-color: #FAF7F0;
+    color: #4A4947;
 }
 .table-striped {
     --bs-table-striped-bg: #D8D2C2; /* Replace with your desired color */
@@ -205,8 +202,7 @@ svg.arrows {
     color: black;
 }
 
-a,
-.projectlinks {
+a {
     color: #B17457;
     text-decoration: none;
 }

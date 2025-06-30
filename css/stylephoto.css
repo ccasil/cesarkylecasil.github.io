@@ -3,7 +3,6 @@ html {
     font-size: 1em;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    background: #afafaf;
 }
 
 body {
@@ -12,11 +11,11 @@ body {
     background-color: #4B5945;
 }
 
-#pagephoto {
+#pagebg {
     background-color: #4B5945;
 }
 .headercolor,
-.headercolor a, .sectioncolor {
+.headercolor a, .sectionbg {
     background-color: #B2C9AD;
     color: #4B5945 !important;
 }

@@ -1,14 +1,28 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
 
-.headercolor404,
-.headercolor404 a {
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.headercolor,
+.headercolor a {
     background-color: #B6B09F;
     color: #000000 !important;
 }
+.opacity {
+    opacity: 0.8;
+}
 
-#page404 {
+#pagebg {
     background-color: #F2F2F2;
 }
-/* 404 */
+
 .four04parallax {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/santa-cruz-min.webp");
@@ -23,7 +37,7 @@
     #splashpage {
         margin-top: 8vh;
     }
-    /* 404 */
+
     .four04parallax {
         background-attachment: scroll;
     }
@@ -34,15 +48,16 @@
         margin-top: 28vh;
     }
 
-    /* 404 */
     .four04parallax {
         background-attachment: fixed;
     }
 }
-.biolinks404 {
+
+.biolinks {
     color: #ffffffe6 !important;
     text-decoration: none !important;
 }
-.biolinks404:hover {
+
+.biolinks:hover {
     color: #B3C8CF !important;
 }
