@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     imageData.forEach(image => {
         const imageDiv = document.createElement('div');
-        imageDiv.classList.add('col-12', 'col-sm-6', 'col-md-4', 'image-trigger');
+        imageDiv.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'image-trigger');
 
         const imageContainerDiv = document.createElement('div');
         imageContainerDiv.classList.add('image-container'); // Apply the CSS class

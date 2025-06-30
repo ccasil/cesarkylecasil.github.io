@@ -9,16 +9,16 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    background: #F8F3D9;
+    background-color: #4B5945;
 }
 
-#pageindex {
-    background-color: #f0f0f0;
+#pagephoto {
+    background-color: #4B5945;
 }
 .headercolor,
 .headercolor a, .sectioncolor {
-    background-color: #504B38;
-    color: #fafafa !important;
+    background-color: #B2C9AD;
+    color: #4B5945 !important;
 }
 
 .opacity {
@@ -26,23 +26,6 @@ body {
 }
 
 @media (max-width: 576px) {
-}
-
-.navbar {
-    width: 173.5px;
-}
-
-.btn-primary {
-    width: 140px !important;
-    background-color: #c5d5c5 !important;
-    color: #222;
-}
-
-.btn-primary:hover,
-.btn-primary.active {
-    border-color: #222 !important;
-    background-color: #e3e0cc !important;
-    color: #222 !important;
 }
 
 .photodetails {
@@ -102,6 +85,6 @@ body {
 }
 
 #submit_button {
-    background-color: #B9B28A;
-    color: #504B38;
+    background-color: #66785F;
+    color: #B2C9AD;
 }
