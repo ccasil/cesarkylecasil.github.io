@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageContainerDiv.setAttribute('data-hd-url', image.hdUrl);
 
         imageContainerDiv.innerHTML = `
-            <img src="${image.smallUrl}" class="img-fluid w-100 border border-5 border-white mb-0" alt="${image.alt}">
+            <img src="${image.smallUrl}" class="img-fluid w-100 border border-5 border-white mb-0 shadow" alt="${image.alt}">
         `;
 
         imageDiv.innerHTML = `
