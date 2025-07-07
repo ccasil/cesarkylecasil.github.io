@@ -36,7 +36,8 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="./images/favicon.ico">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 	<meta name="theme-color" content="#FDF9F3">
 	<meta name="google-site-verification" content="X97QRdCiElOE51dG681m3r0zTvP6oZn-lGv3QG7NPIc" />
 	<link rel="preload" as="image" href="./images/monterey-min.webp" type="image/webp">
@@ -65,6 +66,8 @@
 			</p>
 		</div>
 		<div class="pt-4 px-4">
+			<img src="../images/monterey-min.webp" fetchpriority="high" alt="" style="display:none;"
+				aria-hidden="true" />
 			<div class="titleparallax m-0 rounded-5 shadow-lg">
 				<div class="d-flex justify-content-center text-center">
 					<div class="px-4" id="splashpage">
@@ -122,24 +125,21 @@
 					<div class="col-12 col-md-4 mb-4">
 						<img id="meme" class="img-fluid mx-auto d-block rounded-5"
 							src="./images/cesar-kyle-casil-min.webp"
-							alt="Cesar Kyle Casil about to zipline at Kualoa Ranch in Honolulu Hawaii" width="1909"
-							height="2544" loading="lazy">
+							alt="Cesar Kyle Casil about to zipline at Kualoa Ranch in Honolulu Hawaii" width="166"
+							height="221" loading="lazy">
 					</div>
 					<div class="col-12 col-md-8">
 						<p class="lead text-justify m-0">Cesar Kyle Casil received his Bachelor of Science
 							degree in
-							Computer Science from the <a target="_blank"
-								href=https://raw.githubusercontent.com/ccasil/UCSC_BSOE/master/README.txt> <span
-								class="text-decoration-underline">University of
-								California, Santa Cruz</span></a> and is now practicing full stack web development in
+							Computer Science from the <a class="text-decoration-underline" target="_blank" href=https://raw.githubusercontent.com/ccasil/UCSC_BSOE/master/README.txt>University of
+								California, Santa Cruz</a> and is now practicing full stack web development in
 							iOS
 							and using
 							the
 							MEAN (MongoDB, Express, Angular, Nodejs) stack. Since coming from both an accredited
 							university
 							and a
-							<a target="_blank"
-								href="https://github.com/ccasil/DojoAssignments/blob/master/README.txt">coding
+							<a class="text-decoration-underline" target="_blank" href="https://github.com/ccasil/DojoAssignments/blob/master/README.txt">coding
 								bootcamp</a>, he has not only acquired a unique set of skills, but has learned the
 							importance of how
 							they lead to success within the tech industry. Both institutions provided experience in
