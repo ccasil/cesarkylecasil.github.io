@@ -33,6 +33,37 @@ body {
     color: #D8D2C2;
 }
 
+.btn-patent {
+    background-color: #d8d2c2;
+    color: #4A4947 !important;
+}
+.btn-patent:hover {
+    background-color: #B17457;
+    color: #ffffff !important;
+}
+
+.cardbg {
+    background-color: #d8d2c2;
+}
+
+.patentcard {
+    padding: 4px;
+    border: 2px solid #4a4947;
+}
+.patentcard:hover {
+    border: 2px solid #B17457;
+}
+
+.patent-card-header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .sectionbg {
     background-color: #FAF7F0;
     color: #4A4947;
