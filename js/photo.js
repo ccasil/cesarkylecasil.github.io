@@ -19,6 +19,159 @@ document.addEventListener('DOMContentLoaded', function() {
         //     height: 267
         // },
         {
+            hdUrl: 'https://live.staticflickr.com/65535/55228488730_5362d99665_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228488730_5362d99665_w.jpg',
+            alt: 'Hang Mua, Vietnam',
+            photodetails: 'ƒ/4.0 1/320 ISO100 9mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55227171162_2d1b53ddb4_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55227171162_2d1b53ddb4_w.jpg',
+            alt: 'Hang Mua, Vietnam',
+            photodetails: 'ƒ/4.0 1/800 ISO100 9mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55227171172_42f1f85c44_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55227171172_42f1f85c44_w.jpg',
+            alt: 'Vietnam',
+            photodetails: 'ƒ/4.0 1/1000 ISO100 9mm',
+            date: '3/2026',
+            width: 267,
+            height: 400
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55227171157_a21f83af65_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55227171157_a21f83af65_w.jpg',
+            alt: 'Hanoi, Vietnam',
+            photodetails: 'ƒ/4.5 1/1000 ISO100 9mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228237888_f01123a703_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228237888_f01123a703_w.jpg',
+            alt: 'Hanoi, Vietnam',
+            photodetails: 'ƒ/8.0 1/1600 ISO100 9mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228326154_dc7cba8839_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228326154_dc7cba8839_w.jpg',
+            alt: 'Boracay Sunset',
+            photodetails: 'ƒ/4.0 1/200 ISO100 35mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55227171147_86f621fa44_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55227171147_86f621fa44_w.jpg',
+            alt: 'Boracay Sunset',
+            photodetails: 'ƒ/4.0 1/250 ISO100 35mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228591810_3dbcd19e66_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228591810_3dbcd19e66_w.jpg',
+            alt: 'Boracay',
+            photodetails: 'ƒ/5.6 1/1000 ISO100 9mm',
+            date: '3/2026',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228077156_913279a688_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228077156_913279a688_w.jpg',
+            alt: 'Drifting Away',
+            photodetails: 'ƒ/5.0 1/640 ISO100 18mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228237303_f7423d0428_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228237303_f7423d0428_w.jpg',
+            alt: 'Floating',
+            photodetails: 'ƒ/5.0 1/400 ISO100 50mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55227170702_f771e424fa_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55227170702_f771e424fa_w.jpg',
+            alt: 'Flamingoes in Mexico',
+            photodetails: 'ƒ/4.5 1/640 ISO100 28mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228325654_207fcfc38b_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228325654_207fcfc38b_w.jpg',
+            alt: 'Mexico Cruise',
+            photodetails: 'ƒ/5.0 1/1250 ISO100 30mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228488125_c0ebc8b549_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228488125_c0ebc8b549_w.jpg',
+            alt: 'Mexico Cruise',
+            photodetails: 'ƒ/8.0 1/500 ISO100 20mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228237423_ce2e1ebee8_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228237423_ce2e1ebee8_w.jpg',
+            alt: 'Mexico Cruise',
+            photodetails: 'ƒ/4.5 1/1000 ISO100 38mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228077016_6f8465cea1_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228077016_6f8465cea1_w.jpg',
+            alt: 'Mexico Cruise',
+            photodetails: 'ƒ/4.5 1/1250 ISO100 38mm',
+            date: '11/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228075991_2f33d967ec_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228075991_2f33d967ec_w.jpg',
+            alt: 'Bridge to Santa Clara',
+            photodetails: 'ƒ/5.0 1/500 ISO100 30mm',
+            date: '4/2025',
+            width: 400,
+            height: 267
+        },
+        {
+            hdUrl: 'https://live.staticflickr.com/65535/55228076001_64cb445627_b.jpg',
+            smallUrl: 'https://live.staticflickr.com/65535/55228076001_64cb445627_w.jpg',
+            alt: 'Bridge to Santa Clara',
+            photodetails: 'ƒ/5.0 1/800 ISO100 30mm',
+            date: '4/2025',
+            width: 400,
+            height: 225
+        },
+        {
             hdUrl: 'https://live.staticflickr.com/65535/54415974749_bdd84445e1_k.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/54415974749_5d0e47f599_w.jpg',
             alt: 'Meet me on the Tennis Court, Santa Clara',
