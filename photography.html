@@ -17,11 +17,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, shrink-to-fit=no">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://cesarkylecasil.me/photography/">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//live.staticflickr.com">
+    <link rel="dns-prefetch" href="//www.flickr.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://live.staticflickr.com" crossorigin>
+    <link rel="preconnect" href="https://www.flickr.com" crossorigin>
     <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Cesar Kyle Casil | Silicon Valley Photography</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
     <meta name="description"
@@ -35,10 +45,33 @@
 
     <meta property="og:title" content="Cesar Kyle Casil | Silicon Valley Photography">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cesarkylecasil.me/photography">
+    <meta property="og:url" content="https://cesarkylecasil.me/photography/">
     <meta property="og:image" content="https://cesarkylecasil.me/images/santa-cruz.jpg">
+    <meta property="og:site_name" content="Cesar Kyle Casil">
     <meta property="og:description"
         content="Cesar Kyle Casil captures the beauty of Silicon Valley and beyond through his Sony mirrorless camera. Explore stunning landscapes, urban scenes, and glimpses of his active lifestyle, including hiking, cycling, and fitness.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cesar Kyle Casil | Silicon Valley Photography">
+    <meta name="twitter:description"
+        content="Silicon Valley photography by Cesar Kyle Casil featuring outdoor adventures, travel, landscapes, and lifestyle moments.">
+    <meta name="twitter:image" content="https://cesarkylecasil.me/images/santa-cruz.jpg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="./images/favicon.ico">
+    <link rel="preload" as="image" href="https://live.staticflickr.com/65535/55228488730_5362d99665_w.jpg" fetchpriority="high">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Cesar Kyle Casil | Silicon Valley Photography",
+            "url": "https://cesarkylecasil.me/photography/",
+            "description": "Photography gallery featuring landscapes, travel, and lifestyle images by Cesar Kyle Casil.",
+            "author": {
+                "@type": "Person",
+                "name": "Cesar Kyle Casil",
+                "url": "https://cesarkylecasil.me/"
+            }
+        }
+    </script>
 
 </head>
 
@@ -62,7 +95,7 @@
             <h1 class="h1 display-3 font-weight-bold text-white mb-4"><span class="fw-bold">Photographs</span><br><span
                     class="h2 display-4 opacity mb-0">by <span class="fst-italic">Cesar Kyle Casil</span></span></h1>
             <a class="text-decoration-underline text-white" href="https://www.flickr.com/photos/ccasil/"
-                target="_blank">
+                target="_blank" rel="noopener noreferrer">
                 <h2 class="h5 display-6 mb-4 pt-0">
                     View Originals&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                         fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -120,17 +153,17 @@
                         id="career-form" class="w-75">
                         <input type="hidden" name="access_key" value="fa77b5f2-fbc0-43fe-8289-296c3c82690e" />
                         <input type="hidden" name="subject" value="Cesar Kyle Casil Photography (cesarkylecasil.me)" />
-                        <input type="hidden" name="redirect" value="https://cesarkylecasil.me/photography" />
+                        <input type="hidden" name="redirect" value="https://cesarkylecasil.me/photography/" />
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <!-- <input type="hidden" name="ccemail" value="contactccasil@gmail.com" /> -->
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control rounded-5" id="name" aria-required="true" required
-                                maxlength="80" type="text" id="name" name="name" placeholder="Name">
+                                maxlength="80" name="name" placeholder="Name" autocomplete="name">
                             <label for="name">Name</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control rounded-5" id="email" aria-required="true" required
-                                maxlength="80" type="email" id="email" name="email" placeholder="Email">
+                                maxlength="80" name="email" placeholder="Email" autocomplete="email">
                             <label for="email">Email address</label>
                         </div>
                         <!-- <div class="form-floating mb-3">
@@ -140,7 +173,7 @@
                         </div> -->
                         <div class="form-floating mb-3">
                             <textarea class="form-control rounded-5" id="message" aria-required="true" required
-                                type="text" id="message" name="message" placeholder="Message" rows="3"></textarea>
+                                name="message" placeholder="Message" rows="3" autocomplete="off"></textarea>
                             <label for="message">Message</label>
                         </div>
                         <!-- <div class="mb-3">
@@ -154,7 +187,7 @@
                 </div>
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-4">
-                        <a href="https://github.com/ccasil/" target="_blank"
+                        <a href="https://github.com/ccasil/" target="_blank" rel="noopener noreferrer"
                             aria-label="Go to Cesar Kyle Casil's GitHub">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#4B5945"
                                 class="mb-2 bi bi-github" viewBox="0 0 16 16">
@@ -165,7 +198,7 @@
                         <p class="m-0">GitHub</p>
                     </div>
                     <div class="col-4">
-                        <a href="https://www.linkedin.com/in/ckcasil/" target="_blank"
+                        <a href="https://www.linkedin.com/in/ckcasil/" target="_blank" rel="noopener noreferrer"
                             aria-label="Go to Cesar Kyle Casil's LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#4B5945"
                                 class="mb-2 bi bi-linkedin" viewBox="0 0 16 16">
@@ -180,13 +213,13 @@
         </div>
         <div class="text-center">
             <p class="mb-0 mt-3 pb-3">
-                <a target="_blank" href="./assets/cesar-kyle-casil-resume.pdf" class="text-white text-decoration-none">©
+                <a target="_blank" rel="noopener noreferrer" href="./assets/cesar-kyle-casil-resume.pdf" class="text-white text-decoration-none">©
                     2018 - <span id="year"></span> Cesar Casil (Cesar Kyle Casil)</a>
             </p>
         </div>
 
     </div>
-    <script src="js/photo.js"></script>
+    <script src="js/photo.js" defer></script>
 </body>
 
 </html>

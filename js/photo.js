@@ -299,7 +299,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTitle = document.getElementById('photoModalLabel');
     const modalAlt = document.getElementById('photoModalAlt');
 
-    imageData.forEach(image => {
+    imageData.forEach((image, index) => {
+        const isFirstImage = index === 0;
+        const loadingAttr = isFirstImage ? 'eager' : 'lazy';
+        const fetchPriorityAttr = isFirstImage ? 'high' : 'low';
         const imageDiv = document.createElement('div');
         imageDiv.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'image-trigger');
 
@@ -310,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageContainerDiv.setAttribute('data-hd-url', image.hdUrl);
 
         imageContainerDiv.innerHTML = `
-            <img src="${image.smallUrl}" class="img-fluid w-100 border border-5 border-white mb-0 shadow" alt="${image.alt}">
+            <img src="${image.smallUrl}" class="img-fluid w-100 border border-5 border-white mb-0 shadow" alt="${image.alt}" width="${image.width}" height="${image.height}" loading="${loadingAttr}" decoding="async" fetchpriority="${fetchPriorityAttr}">
         `;
 
         imageDiv.innerHTML = `
