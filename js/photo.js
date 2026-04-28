@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55227171172_42f1f85c44_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55227171172_42f1f85c44_w.jpg',
-            alt: 'Vietnam',
+            alt: 'Saigon, Vietnam',
             photodetails: 'ƒ/4.0 1/1000 ISO100 9mm',
             date: '3/2026',
             width: 267,
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55228326154_dc7cba8839_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55228326154_dc7cba8839_w.jpg',
-            alt: 'Boracay Sunset',
+            alt: 'Boracay Sunset, Philippines',
             photodetails: 'ƒ/4.0 1/200 ISO100 35mm',
             date: '3/2026',
             width: 400,
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55227171147_86f621fa44_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55227171147_86f621fa44_w.jpg',
-            alt: 'Boracay Sunset',
+            alt: 'Boracay Sunset, Philippines',
             photodetails: 'ƒ/4.0 1/250 ISO100 35mm',
             date: '3/2026',
             width: 400,
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55228591810_3dbcd19e66_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55228591810_3dbcd19e66_w.jpg',
-            alt: 'Boracay',
+            alt: 'Boracay, Philippines',
             photodetails: 'ƒ/5.6 1/1000 ISO100 9mm',
             date: '3/2026',
             width: 400,
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55228075991_2f33d967ec_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55228075991_2f33d967ec_w.jpg',
-            alt: 'Bridge to Santa Clara',
+            alt: 'River Oaks Bridge, Santa Clara',
             photodetails: 'ƒ/5.0 1/500 ISO100 30mm',
             date: '4/2025',
             width: 400,
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             hdUrl: 'https://live.staticflickr.com/65535/55228076001_64cb445627_b.jpg',
             smallUrl: 'https://live.staticflickr.com/65535/55228076001_64cb445627_w.jpg',
-            alt: 'Bridge to Santa Clara',
+            alt: 'River Oaks Bridge, Santa Clara',
             photodetails: 'ƒ/5.0 1/800 ISO100 30mm',
             date: '4/2025',
             width: 400,
