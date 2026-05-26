@@ -53,12 +53,10 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="./images/favicon.ico">
 
-	<link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-	<noscript>
-		<link rel="stylesheet" href="css/style.css"></noscript>
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="theme-color" content="#FDF9F3">
 	<meta name="google-site-verification" content="X97QRdCiElOE51dG681m3r0zTvP6oZn-lGv3QG7NPIc" />
-	<link rel="preload" as="image" href="./images/monterey-min.webp" type="image/webp">
+	<link rel="preload" as="image" href="./images/monterey-min.webp" type="image/webp" fetchpriority="high">
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -77,6 +75,7 @@
 <body>
 
 	<span id="top"></span>
+	<main id="main-content">
 	<div class="container-fluid px-0 pt-4" id="pagebg">
 		<div class="headercolor mx-4 p-3 rounded-5 shadow-lg">
 			<nav class="d-flex justify-content-center row g-0 text-center">
@@ -98,6 +97,8 @@
 		</div>
 		<div class="pt-4 px-4">
 			<div class="titleparallax m-0 rounded-5 shadow-lg">
+				<img class="hero-bg-image" src="./images/monterey-min.webp" alt="" width="4032" height="3024"
+					loading="eager" fetchpriority="high" decoding="async" aria-hidden="true">
 				<div class="d-flex justify-content-center text-center">
 					<div class="px-4" id="splashpage">
 						<a href="#about" class="text-white text-decoration-none">
@@ -156,8 +157,10 @@
 				<div class="row g-0">
 					<div class="col-12 col-md-4 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
 						<img id="meme" class="img-fluid mx-auto d-block rounded-5"
-							src="./images/cesar-kyle-d-casil.webp" alt="Cesar Kyle Casil Professional Headshot"
-							width="240" height="320" loading="lazy">
+							src="./images/cesar-kyle-d-casil-240.webp"
+							srcset="./images/cesar-kyle-d-casil-240.webp 240w, ./images/cesar-kyle-d-casil-480.webp 480w, ./images/cesar-kyle-d-casil-720.webp 720w"
+							sizes="(max-width: 767px) 75vw, 240px" alt="Cesar Kyle Casil Professional Headshot"
+							width="240" height="300" loading="lazy" decoding="async">
 					</div>
 					<div class="col-12 col-md-8">
 						<!-- <p class="lead text-justify m-0">Cesar Kyle Casil received his Bachelor of Science
@@ -479,6 +482,7 @@
 			</p>
 		</div>
 	</div>
+	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous" defer></script>
 	<script src="js/main.js" defer></script>

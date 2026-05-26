@@ -33,7 +33,7 @@ const thisyear = new Date().getFullYear();
 ["year", "year0", "year1"].forEach(id => {
     const element = document.getElementById(id);
     if (element) {
-        element.innerHTML = thisyear;
+        element.textContent = thisyear;
     }
 });
 

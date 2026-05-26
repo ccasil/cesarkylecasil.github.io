@@ -1,7 +1,7 @@
 const thisyear = new Date().getFullYear();
 const element = document.getElementById("year");
 if (element) {
-    element.innerHTML = thisyear;
+    element.textContent = thisyear;
 }
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -299,6 +299,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTitle = document.getElementById('photoModalLabel');
     const modalAlt = document.getElementById('photoModalAlt');
 
+    const fragment = document.createDocumentFragment();
+
     imageData.forEach((image, index) => {
         const isFirstImage = index === 0;
         const loadingAttr = isFirstImage ? 'eager' : 'lazy';
@@ -321,36 +323,48 @@ document.addEventListener('DOMContentLoaded', function() {
             ${imageContainerDiv.outerHTML}
             <span class="photodetails text-light">${image.photodetails}</span>
         `;
-        imageContainer.appendChild(imageDiv);
+        fragment.appendChild(imageDiv);
     });
 
-    // Modal click handling
-    const imageTriggers = document.querySelectorAll('.image-trigger');
-    imageTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function() {
-            const hdUrl = this.querySelector('.image-container').getAttribute('data-hd-url');
-            const photoDetails = this.querySelector('.photodetails').textContent;
-            const altText = this.querySelector('img').getAttribute('alt'); 
-            // Show a loading indicator (optional)
-            modalImage.src = ''; // Clear the previous src
-            modalImage.alt = 'Loading...';
-            modalTitle.textContent = 'ƒ/ 1 ISO mm';
-            modalAlt.textContent = '';
+    imageContainer.appendChild(fragment);
 
-            const newImage = new Image(); // Create a new image object
-            newImage.onload = function() {
-                modalImage.src = hdUrl; // Set the new src when loaded
-                modalImage.alt = altText;
-                modalTitle.textContent = photoDetails;
-                modalAlt.textContent = altText;
-            };
-            newImage.onerror = function(){
-                modalImage.alt = 'Error loading image';
-                modalImage.src = '';
-                modalTitle.textContent = photoDetails;
-            }
-            newImage.src = hdUrl; // Start loading the new image
-        });
+    // Modal click handling via delegation to avoid many listeners.
+    imageContainer.addEventListener('click', function(event) {
+        const trigger = event.target.closest('.image-trigger');
+        if (!trigger || !imageContainer.contains(trigger)) {
+            return;
+        }
+
+        const imageContainerElement = trigger.querySelector('.image-container');
+        const photoDetailsElement = trigger.querySelector('.photodetails');
+        const imageElement = trigger.querySelector('img');
+
+        if (!imageContainerElement || !photoDetailsElement || !imageElement) {
+            return;
+        }
+
+        const hdUrl = imageContainerElement.getAttribute('data-hd-url');
+        const photoDetails = photoDetailsElement.textContent;
+        const altText = imageElement.getAttribute('alt');
+
+        modalImage.src = '';
+        modalImage.alt = 'Loading...';
+        modalTitle.textContent = 'ƒ/ 1 ISO mm';
+        modalAlt.textContent = '';
+
+        const newImage = new Image();
+        newImage.onload = function() {
+            modalImage.src = hdUrl;
+            modalImage.alt = altText;
+            modalTitle.textContent = photoDetails;
+            modalAlt.textContent = altText;
+        };
+        newImage.onerror = function() {
+            modalImage.alt = 'Error loading image';
+            modalImage.src = '';
+            modalTitle.textContent = photoDetails;
+        };
+        newImage.src = hdUrl;
     });
     // document.addEventListener('gesturestart', function(e) {
     //     e.preventDefault();
